@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.image img{
+    width: 300px;
+    height: 430px;
+}
+.logo{
+    margin-top: 30px;
+}
+.text{
+    height: 430px;
+    width: 450px;
+    background: url("images/bg-pattern-desktop.svg"), cover, center;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+h1, h2, h3, p, input, .logo, h4{
+    margin-left: 90px;
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-top: 70px;
+    color: #debdbf;
+}
+h2, h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #423a3b;
+}
+h2{
+    margin-top: 10px;
+}
+h3{
+    margin-top: 5px;
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    margin-top: 30px;
+    color: #c1a4a5;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: 2px solid #e8e2e2;
+    background: url("images/icon-error.svg") none;
+    background-repeat: no-repeat;
+    background-position: 80%;
+    background-size: 10%;
+    color: hsl(0, 36%, 70%);
+    padding-left: 20px;
+}
+input::placeholder{
+    padding-left: 10px;
+    color: #e8e2e2;
+}
+input:{
+    border: none;
+    outline: none;
+}
+input[type=text]:focus{
+    outline: none;
+}
+#btn{
+    width: 50px;
+    height: 40px;
+    border-radius: 30px;
+    background: linear-gradient(#f6b3b3, #f19492);
+    border: none;
+    color: #ffcbc7;
+    margin-left: -30px;
+    cursor: pointer;
+}
+h4{
+    margin-left: 110px;
+    font-family: 'Jasefin Sans', sans-serif;
+    font-size: .8rem;
+    margin-top: 5px;
+    color: hsl(0, 36%, 70%);
+}
+
+@media (max-width: 555px){
+    .container{
+        display: block;
+    }
+    .image{
+        margin-top: 10px;
+    }
+    .image img {
+        width: 490px;
+    }
+    .text{
+        width: 490px;
+        margin-bottom: 60px;
+        margin-top: -10px;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    h1{
+        text-align: center;
+        margin-left: 0;
+    }
+    h2{
+        margin-left: 0;
+        text-align: center;
+    }
+    h3{
+        margin-left: 0;
+        text-align: center;
+    }
+    p{
+        margin-left: auto;
+        text-align: center;
+        width: 350px;
+        margin-right: auto;
+    }
+}    
